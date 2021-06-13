@@ -1,0 +1,66 @@
+<html>
+<head>
+    
+    <title>sruthi community radio</title>
+    <link rel="stylesheet" href="styel.css" />
+
+    </head>
+
+<body>
+    
+   <div class="container">
+       <div class="navbar">
+        <div class="right-col">
+         <img src="media/logo.png"  class="logo" >
+            </div> 
+        <div class="left-col"> 
+          <ul hidden>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">ABOUT</a></li>
+          </ul>
+          </div>
+          <br>
+          <br>
+          <br>
+         <div class="content">
+             <div class="left-col">
+                <h1>ஸ்ருதி சமுதாய வானொலி 90.8</h1>
+                <br>
+                <br>
+                <br>
+                <p1>ஸ்ரீ சங்கரா கலை மற்றும் அறிவியல் கல்லூரியின் சமுதாயப் பணிகளில் ஒரு அங்கம்</p1>
+             </div>
+             <div class="right-col">
+             <p>CLICK HERE TO LISTEN </p> 
+             <img src="media/play.png" id="icon">
+             </div>
+            
+         </div>
+         
+    </div>
+             
+</div>
+  
+   <audio controls autoplay loop id="mysong" hidden >
+       <source src="media/Seerkazhi%20Govindarajan%20Best%20Film%20Songs%20Collection%20_%20%E0%AE%9A%E0%AF%80%E0%AE%B0%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%B4%E0%AE%BF%20%E0%AE%9A%E0%AE%BF%E0%AE%B1%E0%AE%A8%E0%AF%8D%E0%AE%A4%20%E0%AE%AA%E0%AE%BE%E0%AE%9F%E0%AE%B2%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%8D.mp3" type="audio/mp3">
+   </audio>
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+        
+        icon.onclick = function(){
+            if(mysong.paused){
+                mysong.play();
+                icon.src = "media/pause.png";
+            }else{
+                 mysong.pause();
+                icon.src = "media/play.png";
+            }
+            
+        }
+     </script>
+    </body>
+
+</html>
